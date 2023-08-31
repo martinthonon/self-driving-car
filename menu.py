@@ -5,7 +5,7 @@ class Menu:
         self.screen_width = 500
         self.screen_height = 500
         self.screen = pygame.display.set_mode((self.screen_width, self.screen_height))
-        # pygame.display.set_caption("Pathfinder Menu")
+        pygame.display.set_caption("Pathfinder Menu")
         self.font = pygame.font.Font(None, 36)
         self.mode = ["NEAT", "Interactif"]
         self.mode_index = 0
