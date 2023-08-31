@@ -69,7 +69,6 @@ class Car(pygame.sprite.Sprite):
             x = int(self.rect.center[0] + math.cos(math.radians(self.angle + radar_angle)) * length)
             y = int(self.rect.center[1] - math.sin(math.radians(self.angle + radar_angle)) * length)
 
-        # Draw Radar
         pygame.draw.line(self.screen, ("green"), self.rect.center, (x, y), 1)
         pygame.draw.circle(self.screen, ("green"), (x, y), 3)
         
