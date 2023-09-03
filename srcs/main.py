@@ -1,6 +1,5 @@
-import os
-import sys
 import pygame
+import os
 from menu import Menu
 from game import Game
 
@@ -18,8 +17,7 @@ def main():
             if option[1] == "Interactif":
                 game.run()
             pop_size = option[3]
-            local_dir = os.path.dirname(__file__)
-            config_path = os.path.join(local_dir, 'config.txt') 
+            config_path = os.path.join('config.txt') 
             game.run_neat(pop_size, config_path)
         
         menu.draw()
