@@ -10,7 +10,7 @@ class Game:
         self.screen_width = 1373
         self.screen_height = 960
         self.screen = pygame.display.set_mode((self.screen_width, self.screen_height))
-        self.track = pygame.image.load(os.path.join("Assets", map + ".png"))
+        self.track = pygame.image.load(os.path.join("assets", map + ".png"))
 
     def run(self):
         global cars

@@ -7,7 +7,7 @@ class Car(pygame.sprite.Sprite):
         super().__init__()
         self.screen = screen
         self.screen_width, self.screen_height = self.screen.get_size()
-        self.original_image = pygame.image.load(os.path.join("Assets", "car.png"))
+        self.original_image = pygame.image.load(os.path.join("assets", "car.png"))
         self.image = self.original_image
         self.rect = self.image.get_rect(center=(686, 800))
         self.vel_vector = pygame.math.Vector2(0.8, 0)
